@@ -1,0 +1,42 @@
+/* 
+    Created on : 13/01/2019, 17:05:57
+    Author     : ML - Manutenção Lira
+*/
+
+.container{
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+    
+    flex-direction: row;
+    /* row-reverse / column / column-reverse */
+    
+    /*não permite uma quebra de linha*/
+    flex-wrap: wrap;
+    /* nowrap / wrap-reverse */
+    
+    /*Forma resumida de usar o direction and wrap*/
+    /*flex-flow: row wrap-reverse;*/
+    
+    /*Alinhamento horizontal*/
+    justify-content: space-between;
+    /* flex-end / center / space-between / space-around */
+    
+    /*Alinhamento vertical*/
+    align-items: stretch;
+    /* flex-start / flex-end / center / baseline */
+    
+    /*Alinhamento vertical quando a quebra de linha*/
+    align-content: stretch;
+    /* flex-end / center / space-between / space-around */
+}
+
+.item{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+    /*Só que pra usar o align-content não podemos usar height*/
+/*    height: 50px;*/
+}
